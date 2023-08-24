@@ -8,29 +8,30 @@ import logout from '../assets/logout.png'
 
 const Sidebar = () => {
     return (
-        <div className="h-full w-[250px] bg-[#171E37]">
+        <div className="h-full min-w-[15%] bg-[#171E37]">
             <div className="block p-4">
                 <img src={logo} alt="logo" />
             </div>
             <div className="text-[#6C747D] py-20 px-6 ">
-                <ul className="flex flex-col gap-8 ">
-                    <li>
-                        <img src={home} alt="home" /> Home
+                <ul className="flex flex-col gap-6 ">
+                    <li className="bg-[#1F2849] p-2 rounded-md">
+                        <img src={home} alt="home" />
+                        Home
                     </li>
-                    <li>
+                    <li className="p-2 rounded-md">
                         <img src={reports} alt="reports" /> Reports
                     </li>
-                    <li className="items-center">
+                    <li className="items-center p-2 rounded-md">
                         <img src={notification} alt="notification" />{' '}
                         Notifications
-                        <div className="inline-flex items-center justify-center w-4 h-4 bg-[#98FFE0] rounded-sm ml-8 font-medium text-xs">
+                        <div className="flex items-center justify-center w-4 h-4 bg-[#98FFE0] rounded-sm font-medium text-xs ml-8 ">
                             <span>1</span> {/* notification pop up */}
                         </div>
                     </li>
-                    <li>
+                    <li className="p-2 rounded-md">
                         <img src={settings} alt="settings" /> Settings
                     </li>
-                    <li>
+                    <li className="p-2 rounded-md">
                         <img src={logout} alt="logout" /> Log out
                     </li>
                 </ul>

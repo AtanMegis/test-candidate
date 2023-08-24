@@ -7,10 +7,14 @@ import cost from '../assets/cost.png'
 import calendar from '../assets/calendar.png'
 import EarningChart from './EarningChart.jsx'
 import OrderChart from './OrderChart.jsx'
+import profit from '../assets/profit.png'
+import Profit from './Profit.jsx'
+import Activity from './Activity.jsx'
+import TotalProfit from './TotalProfit.jsx'
 
 const Dashboard = () => {
     return (
-        <div className="h-screen w-screen flex-1 bg-[#151A2E] ">
+        <div className="h-full w-screen flex-1 bg-[#151A2E] ">
             <div className="flex items-center justify-end border-b-2 px-6">
                 <img src={user} alt="user" className="cursor-pointer" />
             </div>
@@ -24,7 +28,7 @@ const Dashboard = () => {
                     <li className="text-[#0BB885]">Dashboard</li>
                 </ul>
             </div>
-            <div className="w-full h-[67%] px-6 pb-10">
+            <div className="w-full h-[67%] px-6 pb-10 ">
                 <div className="flex justify-between gap-6 h-36">
                     <div className="flex w-1/5 place-content-center rounded-md bg-[#0BB885] p-4 ">
                         <div className="flex place-items-center gap-5">
@@ -75,19 +79,23 @@ const Dashboard = () => {
                 <div className="flex w-full h-full pt-6 gap-4">
                     <div className="w-[60%] flex flex-col gap-2">
                         <div className="h-[35%] flex w-full gap-6">
-                            <div className="w-[40%] bg-[#1C243F] rounded-md">
+                            <div className="w-[45%] flex-grow bg-[#1C243F] rounded-md">
                                 <EarningChart />
                             </div>
-                            <div className="w-[35%] bg-[#1C243F] rounded-md">
+                            <div className="w-[30%] flex-grow bg-[#1C243F] rounded-md ">
                                 <OrderChart />
                             </div>
-                            <div className="w-[25%] bg-[#1C243F] rounded-md">
-                                7
+                            <div className="w-[25%] flex-grow bg-[#1C243F] rounded-md">
+                                <Profit />
                             </div>
                         </div>
-                        <div className="h-[65%] w-full bg-[#1C243F] rounded-md mt-2"></div>
+                        <div className="h-[65%] w-full bg-[#1C243F] rounded-md mt-2">
+                            <TotalProfit />
+                        </div>
                     </div>
-                    <div className="w-[39.5%] bg-[#1C243F] rounded-md ml-2"></div>
+                    <div className="w-[39.5%] flex-grow bg-[#1C243F] rounded-md ml-2">
+                        <Activity />
+                    </div>
                 </div>
                 <div className="mt-4">
                     <ul className="flex text-md text-[#8A92A6] gap-4">

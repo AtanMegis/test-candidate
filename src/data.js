@@ -20,7 +20,7 @@ export const data = [
         id: '3e',
         image: img1,
         time: 'Last Month',
-        sales: '165K',
-        order: '147K',
+        sales: '122K',
+        order: '111K',
     },
 ]

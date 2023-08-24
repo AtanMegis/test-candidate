@@ -28,22 +28,22 @@ const EarningChart = () => {
             </div>
             <div className="flex place-content-center gap-4">
                 {value.map((data) => (
-                    <div key={data.id} className="flex">
+                    <div key={data.id} className="flex gap-4">
                         <img
                             src={data.image}
                             alt={data.id}
                             className="h-[110px]"
                         />
-                        <div className="flex flex-col place-content-center text-white px-6">
+                        <div className="flex flex-col place-content-center text-white px-6 gap-4 ">
                             <p className="list-item marker:text-[#0BB885] text-sm ">
                                 Total Sales
-                                <span className="flex text-[#8A92A6] justify-center">
+                                <span className="block text-[#8A92A6] justify-center ">
                                     {data.sales}
                                 </span>
                             </p>
                             <p className="list-item marker:text-[#FF814A] text-sm ">
                                 Total Order
-                                <span className="flex text-[#8A92A6] justify-center">
+                                <span className="block text-green justify-center">
                                     {data.order}
                                 </span>
                             </p>
