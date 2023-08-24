@@ -8,12 +8,16 @@ module.exports = {
             },
             textColor: {
                 green: '#0BB885',
-                gray: '#8A92A6',
+                grey: '#8A92A6',
                 orange: '#FF814A',
                 lightGrey: '#6C747D',
             },
             backgroundColor: {
                 green: '#0BB885',
+                mainBg: '#151A2E',
+                boxBg: '#1C243F',
+                sideBar: '#171E37',
+                lightGreen: '#98FFE0',
             },
         },
     },

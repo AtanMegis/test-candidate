@@ -8,8 +8,8 @@ import logout from '../assets/logout.png'
 
 const Sidebar = () => {
     return (
-        <div className="h-full min-w-[15%] bg-[#171E37]">
-            <div className="block p-4">
+        <div className="h-full min-w-[15%] bg-sideBar">
+            <div className="block py-4 px-6">
                 <img src={logo} alt="logo" />
             </div>
             <div className="text-[#6C747D] py-20 px-6 ">
@@ -24,7 +24,7 @@ const Sidebar = () => {
                     <li className="items-center p-2 rounded-md">
                         <img src={notification} alt="notification" />{' '}
                         Notifications
-                        <div className="flex items-center justify-center w-4 h-4 bg-[#98FFE0] rounded-sm font-medium text-xs ml-8 ">
+                        <div className="flex items-center justify-center w-4 h-4 bg-lightGreen rounded-sm font-medium text-xs ml-8 ">
                             <span>1</span> {/* notification pop up */}
                         </div>
                     </li>

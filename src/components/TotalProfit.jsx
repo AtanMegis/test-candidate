@@ -21,10 +21,10 @@ const TotalProfit = () => {
                     <div className="flex justify-between px-4 py-2 ">
                         <h2>Total Profit</h2>
                         <div className="flex gap-6">
-                            <p className="list-item marker:text-[#FF814A]">
+                            <p className="list-item marker:text-orange">
                                 <span className="pr-2">Earning</span>
                             </p>
-                            <p className="list-item marker:text-[#0BB885]">
+                            <p className="list-item marker:text-green">
                                 <span className="pr-2">Expense</span>
                             </p>
                         </div>
@@ -52,11 +52,11 @@ const TotalProfit = () => {
                         }}
                     ></Select>
                     <h1 className="text-4xl text-white">$842.98</h1>
-                    <p className="text-sm text-gray-400 self-center text-center">
+                    <p className="text-sm text-grey self-center text-center">
                         Latest Month Balance $426.20k
                     </p>
                     <img src={path} alt={path} />
-                    <button className="bg-[#0BB885] text-[ijo] p-2 rounded-md">
+                    <button className="bg-green text-white p-2 rounded-md">
                         View Report
                     </button>
                 </div>

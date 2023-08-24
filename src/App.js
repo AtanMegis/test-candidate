@@ -1,14 +1,7 @@
-import Dashboard from './components/Dashboard.jsx'
-
-import Sidebar from './components/Sidebar.jsx'
+import Home from './pages/Home.jsx'
 
 function App() {
-    return (
-        <div className="flex h-screen">
-            <Sidebar />
-            <Dashboard />
-        </div>
-    )
+    return <Home />
 }
 
 export default App
